@@ -141,6 +141,22 @@
       width: fit-content;
       margin-bottom: 1.5rem;
       animation: fadeUp 0.6s ease both;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .hero-badge:hover {
+      background: rgba(245,166,35,0.16);
+      border-color: rgba(245,166,35,0.45);
+      transform: translateY(-2px);
+    }
+
+    .hero-badge:focus-visible {
+      outline: none;
+      background: rgba(245,166,35,0.16);
+      border-color: rgba(245,166,35,0.55);
+      transform: translateY(-2px);
     }
     .hero-badge::before {
       content: '';
